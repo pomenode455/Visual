@@ -2,8 +2,8 @@
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20Command%20UI%20Library/Source.lua', true))()
 
 local Window = Library:CreateWindow({
-    Name = 'Visual Command UI Library',
-    IntroText = 'Visual Command UI Library',
+    Name = 'OS',
+    IntroText = 'OS commands',
     IntroIcon = 'rbxassetid://10618644218',
     IntroBlur = true,
     IntroBlurIntensity = 15,
@@ -14,7 +14,7 @@ local Window = Library:CreateWindow({
 })
 
 -- // Commands
-Window:AddCommand('Баннер', {'String'}, 'Prints A String.', function(Arguments, Speaker)
+Window:AddCommand('Баннер', {'Текст'}, 'Меняет нижний текст баннеров', function(Arguments)
 workspace.AdBillboards.Billboard.Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments)
 
         workspace.AdBillboards.Billboard.Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments)
