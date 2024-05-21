@@ -15,27 +15,27 @@ local Window = Library:CreateWindow({
 
 -- // Commands
 Window:AddCommand('Баннер', {'String'}, 'Prints A String.', function(Arguments, Speaker)
-    workspace.AdBillboards.Billboard.Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments[1])
+workspace.AdBillboards.Billboard.Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments)
 
-        workspace.AdBillboards.Billboard.Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments[1])
+        workspace.AdBillboards.Billboard.Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments)
 
-        workspace.AdBillboards:GetChildren()[4].Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments[1])
+        workspace.AdBillboards:GetChildren()[4].Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments)
 
-        workspace.AdBillboards:GetChildren()[4].Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments[1])
+        workspace.AdBillboards:GetChildren()[4].Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments)
 
-        workspace.AdBillboards.PlasmaTV.Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments[1])
+        workspace.AdBillboards.PlasmaTV.Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments)
 
-        workspace.AdBillboards.PlasmaTV.Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments[1])
+        workspace.AdBillboards.PlasmaTV.Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments)
 
-        workspace.AdBillboards:GetChildren()[2].Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments[1])
+        workspace.AdBillboards:GetChildren()[2].Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments)
 
-       workspace.AdBillboards:GetChildren()[2].Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments[1])
+       workspace.AdBillboards:GetChildren()[2].Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments)
 
-       workspace.AdBillboards:GetChildren()[3].Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments[1])
+       workspace.AdBillboards:GetChildren()[3].Screen:GetChildren()[2].ContextFrame:GetChildren()[2].Text = (Arguments)
 
-       workspace.AdBillboards:GetChildren()[2].Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments[1])
+       workspace.AdBillboards:GetChildren()[2].Screen.Interface.ContextFrame:GetChildren()[2].Text = (Arguments)
 
-       workspace.AdBillboards:GetChildren()[2].Screen.Interface.ContextFrame.TextLabel.Text = (Arguments[1])
+       workspace.AdBillboards:GetChildren()[2].Screen.Interface.ContextFrame.TextLabel.Text = (Arguments)
 end)
 
 Window:AddCommand('SetPrefix', {'New Prefix'}, 'Changes The Prefix.', function(Arguments, Speaker)
